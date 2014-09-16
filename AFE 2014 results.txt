@@ -1,0 +1,180 @@
+LOBLOLLY 2012											
+model totpita = burn/ dist = negbin link=log type1 type3;											
+											
+"*AIC=224.86 (better than poisson, around 750)"											
+"Shapiro-Wilk: W=0.95, P=0.1462"										contrasts for herbs 2012	
+LR Type 3 Analysis--										1v3	0.0517
+"burn: df=3, chi-square=6.21, P=0.1018"										2v3	0.0023
+LSmeans: 										3v4	0.0054
+burn Estimate Standard Error  z Value  Pr > |z| 											
+1	  1.6094   0.6649 		2.42		0.0155					herbs 2013	
+2	  3.2144   0.4773 		6.73		<.0001 					NS	
+3	  3.0204   0.5858 		5.16		<.0001 						
+4	  1.8326   0.4253 		4.31		<.0001 						
+;											
+											
+LOBLOLLY 2013											
+  model totpita = burn/ dist = negbin link=log type1 type3;											
+  											
+"*AIC=224.86 (better than poisson, around 750)"											
+"Shapiro-Wilk: W=0.93, P=0.0108 --non-normal residuals"											
+LR Type 3 Analysis--											
+"burn: df=3, chi-square=6.21, P=0.1018"											
+LSmeans: 											
+burn 	Estimate 	Standard Error  z Value  Pr > |z| 									
+1		1.7228		0.6374			2.7	0.0069			
+2		2.9653		0.4364			6.79	<.0001 			
+3		2.6672		0.4385			6.08	<.0001 			
+4		2.5649		0.3032			8.46	<.0001 			
+;											
+											
+SAND POST OAK 2012											
+ model totquma = burn/ dist = negbin link=log type1 type3;											
+  											
+*AIC=140.1959											
+"Shapiro-Wilk: W=0.806, P<0.0001 ---non-normal residuals"											
+LR Type 3 Analysis--											
+"burn: df=3, chi-square=5.54, P=0.1364"											
+LSmeans: 											
+burn Estimate Standard Error  z Value  Pr > |z| 											
+1	2.4681	0.9093		2.71		0.0066					
+2	1.8971	0.6831	2.78		0.0055						
+3	1.0415	0.8566		1.22		0.224					
+4	  -0.08701   0.6545 	-0.13	0.8942								
+											
+;											
+											
+SAND POST OAK 2013											
+  model totquma = burn/ dist = negbin link=log type1 type3;											
+  											
+*AIC=140.1959											
+"Shapiro-Wilk: W=0.7652, P<0.0001 ---non-normal residuals"											
+LR Type 3 Analysis--											
+"burn: df=3, chi-square=5.54, P=0.1364"											
+LSmeans: 											
+burn 	Estimate 	Standard Error  z Value  Pr > |z| 									
+1		2.5494		1.1086			2.3	0.0215			
+2		1.9021		0.7884			2.41	0.0158			
+3		0.9163		0.8042			1.14	0.2545			
+4		0.5664		0.5621			1.01	0.3136			
+;											
+											
+BLACKJACK OAK 2012											
+ model totquma3 = burn/ dist = negbin link=log type1 type3;											
+  											
+*AIC=169.6919											
+"Shapiro-Wilk: W=0.898, P=0.0055 --non-normal residuals"											
+LR Type 3 Analysis--											
+"burn: df=3, chi-square=9.14, P=0.0275 *"											
+LSmeans: 											
+burn 	Estimate 	Standard Error 	z Value 	Pr > |z| 							
+1		-22.9321	42674			0		"0.9996   ****crazy estimate and SE, only 2 obs"			
+2		2.1595		0.6405			3.37		0.0007		
+3		2.7515		0.7789			3.53		0.0004		
+4		2.0898		0.5553			3.76		0.0002		
+;											
+											
+BLACKJACK OAK 2013											
+model totquma3 = burn/ dist = negbin link=log type1 type3;											
+  											
+*AIC=169.6919											
+"Shapiro-Wilk: W=0.846, P=0.0055 --non-normal residuals"											
+LR Type 3 Analysis--											
+"burn: df=3, chi-square=9.14, P=0.0275 *"											
+LSmeans: 											
+burn 	Estimate 	Standard Error 	z Value 	Pr > |z| 							
+1		-21.9922	26673			0		"0.9993    ****crazy estimate and SE, only 2 obs"			
+2		2.4932		0.6891			3.62		0.0003		
+3		2.2083		0.6911			3.2		0.0014		
+4		2.126		0.4774			4.45		<.0001 		
+;											
+											
+BOTH SPECIES OF OAK COMBINED 2012											
+ model totoaks = burn/ dist = negbin link=log type1 type3;											
+  											
+*AIC=140.1959											
+"Shapiro-Wilk: W=0.9354, P=0.0942 "											
+LR Type 3 Analysis--											
+"burn: df=3, chi-square=0.65, P=0.8851"											
+LSmeans: 											
+burn Estimate 	Standard Error  z Value  Pr > |z| 										
+1	2.4681	0.4906			5.03	<.0001 					
+2	2.8478	0.3835			7.43	<.0001 					
+3	2.9178	0.4421			6.6	<.0001 					
+4	2.6027	0.3862			6.74	<.0001 					
+;											
+											
+BOTH SPECIES OF OAK COMBINED 2013											
+   model totoaks = burn/ dist = negbin link=log type1 type3;											
+  											
+*AIC=140.1959											
+"Shapiro-Wilk: W=0.9447, P=0.0654 "											
+LR Type 3 Analysis--											
+"burn: df=3, chi-square=0.57, P=0.9040"											
+LSmeans: 											
+burn 	Estimate 	Standard Error  z Value  Pr > |z| 									
+1		2.7726		0.5486			5.05	<.0001 			
+2		2.9339		0.3456			8.49	<.0001 			
+3		2.5564		0.368			6.95	<.0001 			
+4		2.7222		0.2936			9.27	<.0001 			
+;											
+											
+											
+YAUPON 2012											
+  model totilvo = burn/ dist = negbin link=log type1 type3;											
+ 											
+*AIC=140.1959											
+"Shapiro-Wilk: W=0.9464, P=0.3428"											
+LR Type 3 Analysis--											
+"burn: df=3, chi-square=8.78, P=0.0324 *"											
+LSmeans: 											
+burn 	Estimate 	Standard Error  z Value  Pr > |z| 									
+1		5.3356		0.3993			13.36	<.0001 			
+2		4.1363		0.3398			12.17	<.0001 			
+3		2.9957		0.9178			3.26	0.0011			
+4		3.9943		0.3403			11.74	<.0001 			
+;											
+											
+YAUPON 2013 											
+  model totilvo = burn/ dist = negbin link=log type1 type3;											
+											
+*AIC=140.1959											
+"Shapiro-Wilk: W=0.8943, P=0.0006 --non-normal residuals"											
+LR Type 3 Analysis--											
+"burn: df=3, chi-square=4.99, P=0.1728"											
+LSmeans: 											
+burn 	Estimate 	Standard Error  z Value  Pr > |z| 									
+1		5.124		0.862			5.94	<.0001 			
+2		3.9336		0.6376			6.17	<.0001 			
+3		3.0819		0.6707			4.59	<.0001 			
+4		3.3763		0.486			6.95	<.0001 			
+;											
+											
+HERBACEOUS RICHNESS 2012											
+  model richness = burn/ dist = negbin link=log type1 type3;											
+ 											
+*AIC=169.6919											
+"Shapiro-Wilk: W=0.9812, P=0.8363"											
+LR Type 3 Analysis--											
+"burn: df=3, chi-square=10.12, P=0.0176 * "											
+LSmeans: 											
+burn 	Estimate 	Standard Error 	z Value 	Pr > |z| 							
+1		2.7973		0.1123			24.9		<.0001 		
+2		2.9267		0.07865		37.21		<.0001 			
+3		2.4709		0.1201			20.57		<.0001 		
+4		2.867		0.07011		40.89		<.0001 			
+;											
+											
+HERBACEOUS RICHNESS 2013											
+  model richness = burn/ dist = negbin link=log type1 type3;											
+*AIC=169.6919											
+"Shapiro-Wilk: W=0.970722, P=0.2946"											
+LR Type 3 Analysis--											
+"burn: df=3, chi-square=1.56, P=0.6693 "											
+LSmeans: 											
+burn 	Estimate 	Standard Error 	z Value 	Pr > |z| 							
+1		2.9857		0.1349			22.14		<.0001 		
+2		3.0634		0.09336		32.81		<.0001 			
+3		3.0155		0.09458		31.88		<.0001 			
+4		3.1293		0.06331		49.43		<.0001 			
+;											
